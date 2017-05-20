@@ -233,6 +233,9 @@ button {
 [data-whatinput=mouse] button {
     outline: 0
 }
+.contacts ul {
+    float: right;
+}
 .is-visible {
     display: block !important
 }
@@ -4546,7 +4549,6 @@ header ul {
 }
 header ul li {
     display: inline-block;
-    width: 80px;
     padding: 5px 5px 2px;
     margin: 0 10px;
     font-weight: bolder;
