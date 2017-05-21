@@ -1093,6 +1093,9 @@ button {
     .large-9 {
         width: 75%
     }
+    .largeNew {
+        width: 37.5%;
+    }
     .large-push-9 {
         position: relative;
         left: 75%
