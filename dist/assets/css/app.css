@@ -236,6 +236,18 @@ button {
 .contacts ul {
     float: right;
 }
+.contacts ul li:first-child{
+    position: relative;
+}
+.contacts ul li:first-child::before{
+    content: "";
+    background: url(https://images.seeklogo.net/2016/09/facebook-icon-preview-200x200.png);
+    height:40px;
+    width: 40px; 
+    position: absolute!important;
+    z-index: 10;
+    display: block;
+}
 .is-visible {
     display: block !important
 }
@@ -3915,11 +3927,17 @@ table.hover tr:nth-of-type(even):hover {
     .top-bar.stacked-for-medium .top-bar-right {
         width: 100%
     }
+    
 }
 @media screen and (max-width: 74.9375em) {
     .top-bar.stacked-for-large .top-bar-left,
     .top-bar.stacked-for-large .top-bar-right {
         width: 100%
+    }
+}
+@media (max-width: 767px) {
+    .contacts{ 
+        display: none;
     }
 }
 .top-bar-title {
@@ -4573,6 +4591,10 @@ header ul li.long {
     display: block;
     width: 100%;
     margin: 0;
+    border-radius: 4%;
+}
+.long ul li:hover {
+    box-shadow: inset 0 3px 15px rgba(0,0,0,.25);
 }
 
 header ul li.long:hover > .menu.vertical {
@@ -4589,7 +4611,7 @@ header ul li a:hover {
     color: inherit
 }
 header ul li:hover {
-    cursor: pointer
+    cursor: pointer;
 }
 header ul li.active,
 header ul li:hover {
@@ -4602,7 +4624,7 @@ header ul li.active a {
 header ul li.active:after {
     position: absolute;
     top: 0;
-    left: 30px;
+    left: 33%;
     width: 0;
     height: 0;
     content: '';
