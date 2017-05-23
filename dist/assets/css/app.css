@@ -235,18 +235,11 @@ button {
 }
 .contacts ul {
     float: right;
+    margin-top: 1%;
+    margin-right: 2%;
 }
 .contacts ul li:first-child{
     position: relative;
-}
-.contacts ul li:first-child::before{
-    content: "";
-    background: url(https://images.seeklogo.net/2016/09/facebook-icon-preview-200x200.png);
-    height:40px;
-    width: 40px; 
-    position: absolute!important;
-    z-index: 10;
-    display: block;
 }
 .is-visible {
     display: block !important
@@ -3762,12 +3755,26 @@ table.hover tr:nth-of-type(even):hover {
     max-width: 100%;
     transition: box-shadow .2s ease-out;
     border-radius: 0;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
 }
 .thumbnail:focus,
 .thumbnail:hover {
     box-shadow: 0 0 6px 1px rgba(33, 153, 232, .5)
 }
+.thumbnail1{
+    border: 0px solid #fefefe;
+    
+    display: inline-block;
+    line-height: 0;
+    width: 0;
+    height: 0;
+    transition: box-shadow .2s ease-out;
+    border-radius: 0;
+    margin-bottom: 0;
+    border: 0;
+
+}
+
 .title-bar {
     background: #0a0a0a;
     color: #fefefe;
